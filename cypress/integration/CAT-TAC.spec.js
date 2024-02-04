@@ -14,7 +14,7 @@ beforeEach(() => {
   })
 
 describe('Central de Atendimento ao Cliente TAT', function() {
-    /*
+    
     it('verifica o título da aplicação', function() {
         
         cy.title().should('include', 'Central de Atendimento ao Cliente TAT')
@@ -83,8 +83,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             lastName: 'De Tal',
             email: 'Fuladodetal@gmail.com',
             message: 'Mensagem de teste para preencher o campo de texto aberto do formulário de contato da Central de Atendimento ao Cliente TAT'})
-    }) */
-    /*
+    }) 
+    
     it('seleciona um produto (YouTube) por seu texto', function() {
         
         cy.get('#product').select('YouTube')
@@ -102,8 +102,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('#product').select(1)
         cy.get('#product').should('have.value', 'blog')
 
-    })*/
-    /*
+    })
+    
     it('marca o tipo de atendimento "Feedback"', function() {
             
         cy.get('input[type="radio"]').check("feedback")
@@ -118,8 +118,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             cy.wrap($radio).check()
             cy.wrap($radio).should('be.checked')})
     })
-    */
-   /*
+    
+   
     it('marca ambos checkboxes, depois desmarca o último', function() {
                 
             cy.get('input[type="checkbox"]')
@@ -128,8 +128,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
                 cy.wrap($checkbox).check()
                 cy.wrap($checkbox).should('be.checked')})
             .last().uncheck()
-    })*/
-    /*
+    })
+    
     it('seleciona um arquivo da pasta fixtures', function() {
 
         cy.get('input[type="file"]')
@@ -151,7 +151,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         .selectFile('@sampleFile')
         .should(function($input) { 
             expect($input[0].files[0].name).to.eq('example.json')})
-    })*/
+    })
     it('verifica que a política de privacidade abre em outra aba sem a necessidade de um clique', function() {
 
         cy.get('#privacy a').should('have.attr', 'target', '_blank')
