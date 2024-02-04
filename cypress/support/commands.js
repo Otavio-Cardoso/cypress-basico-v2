@@ -29,6 +29,6 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', project => {
     cy.get('#lastName').type(project.lastName)
     cy.get('#email').type(project.email)
     cy.get('#open-text-area').type(project.message, { delay: 0})
-    cy.get('#enviar').click()
+    cy.contains('Enviar').click()
     
   })
